@@ -17,7 +17,8 @@ def gen_docs(gen, run, modelname, datasetname, ndoc, real, synt):
 
 
 
-    hf_token = "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"
+    #HF_TOKEN AUTHENTICATION
+
 
     login(token = hf_token) #writeToken
 

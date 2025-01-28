@@ -9,7 +9,8 @@ def gen_model_zero(run, modelname, datasetname, ndoc, real, synt):
 
     base_model = f"dgambettavuw/M_{modelname}"
 
-    hf_token = "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"
+    #HF_TOKEN AUTHENTICATION
+
     login(token = hf_token) 
 
     model, tokenizer = FastLanguageModel.from_pretrained(

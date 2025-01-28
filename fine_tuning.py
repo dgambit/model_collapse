@@ -25,10 +25,7 @@ def fine_tuning(gen, run, modelname, datasetname, ndoc, real, synt):
     
     curr_doc = f"dgambettavuw/D_gen{gen}_run{run}_{modelname}_{datasetname}_doc{ndoc}_real{real}_synt{synt}_vuw"
 
-
-    hf_token = "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"
-    login(token = hf_token) #writeToken
-
+    #HF_TOKEN AUTHENTICATION
 
     model, tokenizer = FastLanguageModel.from_pretrained(
         model_name = curr_model, 
